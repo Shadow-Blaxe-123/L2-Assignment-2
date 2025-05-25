@@ -99,4 +99,11 @@ FROM sightings;
 -- PROBLEM #3.
 SELECT *
 FROM sightings
-WHERE location LIKE '%Pass'
+WHERE location LIKE '%Pass';
+-- PROBLEM #4.
+SELECT name,
+    COUNT(sighting_id) AS total_sightings
+FROM sightings
+    NATURAL JOIN rangers
+GROUP BY name
+ORDER BY name ASC;
