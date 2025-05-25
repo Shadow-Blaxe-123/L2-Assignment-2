@@ -118,6 +118,6 @@ SELECT common_name,
     name
 FROM sightings
     NATURAL JOIN rangers
-    JOIN species ON sightings.species_id = species.species_id
+    NATURAL JOIN species
 ORDER BY sighting_time DESC
 LIMIT 2;
