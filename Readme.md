@@ -25,6 +25,13 @@ When used together, the clauses allow for the creation of a pagination system. T
 ## 4. Explain the purpose of the WHERE clause in a SELECT statement
 
 The **WHERE** clause is used to add conditions to the **SELECT** statement, so that we get a specific result from the **SELECT** statement. For example, in a hypothetical "Students" table,instead  of getting all the students like below:
-```sql SELECT * FROM students;```
+
+```sql
+SELECT * FROM students;
+```
+
 We can instead get all the students with a grade A, which is more useful
-```sql SELECT * FROM students WHERE grade = 'A';```
+
+```sql
+SELECT * FROM students WHERE grade = 'A';
+```
