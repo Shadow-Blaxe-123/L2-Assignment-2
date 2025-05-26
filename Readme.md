@@ -35,3 +35,13 @@ We can instead get all the students with a grade A, which is more useful
 ```sql
 SELECT * FROM students WHERE grade = 'A';
 ```
+
+## 5. What is the purpose of a database schema in PostgreSQL?
+
+In PostgreSQL, a database schema holds all the related database objects like
+
+- Tables
+- Views
+- Functions
+
+It helps organize and group these objects within a single database under a shared namespace. Schemas prevent naming conflicts — for example, you can have two "Users" tables in the same database as long as they are in different schemas, such as one "Users" table being the "public" schema whilst the other be in the "admin" schema. This keeps objects separated and improves clarity for developers working on large projects.
