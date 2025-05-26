@@ -21,3 +21,10 @@ The **LIMIT** clause is used to limit the number of records/rows a Query returns
 On the other hand, **OFFSET** is used to tell the database to skip a certain number of rows/records when returning the result of a query.
 
 When used together, the clauses allow for the creation of a pagination system. Therefore, instead of returning all the potentially thousands of posts a User made, we can break up the data in chunks that we will be returned to the front-end. Thus, reducing loading time that users will have to face. We can even make it so that when the new chunk is requested the old one is removed from the memory of the client device, thus, improving the performance of our applications.
+
+## 4. Explain the purpose of the WHERE clause in a SELECT statement
+
+The **WHERE** clause is used to add conditions to the **SELECT** statement, so that we get a specific result from the **SELECT** statement. For example, in a hypothetical "Students" table,instead  of getting all the students like below:
+```sql SELECT * FROM students;```
+We can instead get all the students with a grade A, which is more useful
+```sql SELECT * FROM students WHERE grade = 'A';```
